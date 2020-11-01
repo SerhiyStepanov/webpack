@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve --open",
-    "dev": "webpack",
-    "watch": "webpack --watch",
-    "prod": "webpack --mode=production"
+    "start": "webpack-dev-server --mode development",
+    "dev": "webpack --mode development",
+    "watch": "webpack --mode development --watch",
+    "prod": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -21,8 +21,12 @@
   },
   "homepage": "https://github.com/SerhiyStepanov/webpack#readme",
   "devDependencies": {
+    "css-loader": "^5.0.0",
+    "file-loader": "^6.2.0",
+    "style-loader": "^2.0.0",
     "webpack": "^5.3.2",
     "webpack-cli": "^4.1.0",
     "webpack-dev-server": "^3.11.0"
   }
 }
+
